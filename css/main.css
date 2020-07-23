@@ -65,7 +65,7 @@ body {
     color: white;
     font-size: 25px;
 }
-.input{
+.input-home{
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 30px;
@@ -131,6 +131,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
