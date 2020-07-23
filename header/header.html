@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <title>Header</title>
 </head>
 <style>
   body {
     margin: 0px;
+    font-family: 'Mulish', sans-serif;
     background-color: #ab88ff;
   }
-  header {
+  .header {
     background-color: #ab88ff;
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .header-img {
     width: 200px;
@@ -24,17 +29,42 @@
   .header-menu {
     margin-right: 30px;
   }
+  /* -------- */
   .header-menu-profile {
-    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header-menu-profile img {
+    margin-right: 8px;
     width: 40px;
   }
+  .header-menu-profile p {
+   margin: 0;
+   color: white;
+  }
   .header-menu ul{
-    /* display: none; */
+    display: none;
     list-style: none;
-    padding: 0;
+    padding: 0px;
+    position: absolute;
     width: 100px;
     text-align: right;
     margin: 0px 0px 0px -14px;
+  }
+  .header-menu:hover ul, ul:hover{
+    display: block;
+  }
+  .header-menu li {
+    margin: 10px 0px;
+  }
+  .header-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  .header-menu li a:hover {
+    text-decoration: underline;
   }
 </style>
 <body>
